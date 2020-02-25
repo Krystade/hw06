@@ -4,7 +4,7 @@ OBJS =
 
 all: hw06
 
-hw05: hw06.cpp Card.o Deck.o
+hw06: hw06.cpp
 	$(CC)$(FLAGS)hw06.cpp -o hw06 $(OBJS)
 
 clean:
