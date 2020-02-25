@@ -1,11 +1,11 @@
 CC = g++
-Flags = -std=c++14 - Wall - g
+FLAGS = -std=c++14 - Wall - g
 OBJS = 
 
 all: hw06
 
 hw06: hw06.cpp
-	$(CC)$(FLAGS)hw06.cpp -o hw06 $(OBJS)
+	$(CC) $(FLAGS )hw06.cpp -o hw06 $(OBJS)
 
 clean:
 	rm*.o hw06 hw06.tar
