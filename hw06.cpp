@@ -3,17 +3,20 @@
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Program to practice recursion and look at the difference between iteration and recursion, Ansi-style
 //============================================================================
 
 #include <iostream>
 using namespace std;
 
+//Forward Declaration of recursive and iterative reverse functions
 void reverse(string& input, int start, int end);
 void reverseLoop(string& input, int start, int end);
 
 int main() {
+	//Index where the reversal should begin
 	int start;
+	//Index where the reversal should end
 	int end;
 	string alph = "abcdefghijklmnopqrstuvwxyz";
 	//Print the unaltered string
@@ -41,7 +44,7 @@ int main() {
 
 	return 0;
 }
-
+//Function that reverses a portion of a string given user input using a recursive approach
 void reverse(string& input, int start, int end){
 	if(start != end){
 		char temp = input[end];
@@ -54,7 +57,7 @@ void reverse(string& input, int start, int end){
 		cout << input;
 	}
 }
-
+//Function that reverses a portion of a string given user input using an iterative approach
 void reverseLoop(string& input, int start, int end){
 	char temp = 0;
 	for(int i = 0; i < (end-start)/2; i++){
